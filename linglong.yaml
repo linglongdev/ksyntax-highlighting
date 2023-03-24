@@ -1,0 +1,24 @@
+package:
+  id: ksyntax-highlighting
+  version: 5.54.0
+  kind: lib
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+depends:
+- id: qtbase
+  version: 5.11.3.15
+- id: qttools
+  version: 5.11.3
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/ksyntax-highlighting.git
+  version: master
+  commit: e524a37b9489caa70639d49b4358a81295515923
+
+  patch: []
+build:
+  kind: cmake
